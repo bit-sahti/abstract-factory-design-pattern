@@ -1,8 +1,8 @@
-import { ViewFactory } from "../../shared/base/viewFactory.mjs";
-import { ConsoleTableComponent } from "./table.mjs";
+import { TableComponent } from '../../shared/base/tableComponent.mjs'
+import { ConsoleTableComponent } from './table.mjs'
 
-export default class ConsoleFactory extends ViewFactory {
-    createTable() {
-        return new ConsoleTableComponent()
-    }
+export default class ConsoleFactory extends TableComponent {
+  createTable() {
+    return new ConsoleTableComponent()
+  }
 }

@@ -5,8 +5,6 @@ export class BrowserTableComponent extends TableComponent {
     const table = this.#buildTable(data)
 
     document.body.insertAdjacentHTML('afterBegin', table)
-
-    // console.log(table)
   }
 
   #buildTable(data) {    
